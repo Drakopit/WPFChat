@@ -15,8 +15,8 @@ namespace WPFChat.Pages.Settings
     public class AppearanceViewModel
         : NotifyPropertyChanged
     {
-        private const string FontSmall = "small";
-        private const string FontLarge = "large";
+        private const string FontSmall = "Pequena";
+        private const string FontLarge = "Grande";
 
         // 9 accent colors from metro design principles
         /*private Color[] accentColors = new Color[]{
@@ -63,8 +63,8 @@ namespace WPFChat.Pages.Settings
         public AppearanceViewModel()
         {
             // add the default themes
-            this.themes.Add(new Link { DisplayName = "dark", Source = AppearanceManager.DarkThemeSource });
-            this.themes.Add(new Link { DisplayName = "light", Source = AppearanceManager.LightThemeSource });
+            this.themes.Add(new Link { DisplayName = "Escuro", Source = AppearanceManager.DarkThemeSource });
+            this.themes.Add(new Link { DisplayName = "Claro", Source = AppearanceManager.LightThemeSource });
 
             this.SelectedFontSize = AppearanceManager.Current.FontSize == FontSize.Large ? FontLarge : FontSmall;
             SyncThemeAndColor();

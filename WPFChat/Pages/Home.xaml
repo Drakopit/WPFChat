@@ -8,7 +8,8 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <StackPanel MinWidth="200">
-                <TextBlock Text="TODO: add content" />
+                <!--<TextBlock Text="Aqui esta a aprensentação da aplicação!" />-->
+                <RichTextBox />
             </StackPanel>
         </ScrollViewer>
     </Grid>
